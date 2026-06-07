@@ -1,0 +1,13 @@
+# Guía de Instalación y Despliegue
+## Backend
+1. Crear entorno virtual: `python -m venv venv`
+2. Activar entorno: `source venv/bin/activate` (Linux/Mac) o `venv\Scripts\activate` (Windows)
+3. Instalar dependencias: `pip install -r requirements.txt`
+4. Ejecutar servidor: `uvicorn backend.main:app --reload`
+## Frontend
+1. Instalar dependencias: `npm install`
+2. Ejecutar desarrollo: `npm run dev`
+3. Construir para producción: `npm run build`
+## Configuración
+- Cambiar `SECRET_KEY` en `backend/auth.py` para producción.
+- Configurar CORS en `backend/main.py` con la URL del frontend.
